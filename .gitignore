@@ -1,34 +1,15 @@
-# Binaries
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-bin/
-dist/
-
-# Go
-*.test
-*.out
-go.work
-
-# Environment
+# Secrets
 .env
-*.env
-!.env.example
 
-# IDE
+# Binaries
+main
+main.exe
+app
+app.exe
+
+# OS specific
+.DS_Store
+
+# IDEs
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Dependencies
-vendor/

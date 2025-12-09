@@ -1,15 +1,20 @@
 package domain
 
+import "time"
+
 type MessageType string
 
 const (
-	MessageTypeSMS   MessageType = "sms"
-	MessageTypeEmail MessageType = "email"
+    MessageTypeSMS   MessageType = "sms"
+    MessageTypeEmail MessageType = "email"
 )
 
 type Message struct {
-	Type    MessageType // sms ή email
-	To      string      // +30699... ή email@example.com
-	Subject string
-	Body    string
+    ID        string      // Unique ID (UUID)
+    Type      MessageType
+    To        string
+    Subject   string
+    Body      string
+    Status    string      // pending, sent, failed
+    CreatedAt time.Time
 }
